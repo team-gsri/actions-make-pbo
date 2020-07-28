@@ -6,8 +6,8 @@ if [ "$#" -ne "2" ]; then
 fi
 
 MISSION_DIR=$GITHUB_WORKSPACE/$1
-MISSION_SQM=$MISSION_DIR/misison.sqm
-MISSION_BIN=$MISSION_DIR/misison.bin
+MISSION_SQM=$MISSION_DIR/mission.sqm
+MISSION_BIN=$MISSION_DIR/mission.bin
 MISSION_PBO=$MISSION_DIR.pbo
 BRIEFING_NAME=${2//\"/}
 
