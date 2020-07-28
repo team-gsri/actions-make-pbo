@@ -24,7 +24,7 @@ fi
 if [ -n "$BRIEFING_NAME" ]; then
   echo "Setting briefing name"
   IN='briefingName="[^"]*";'
-  OUT="briefingName=\"$BREFING_NAME\";"
+  OUT="briefingName=\"$BRIEFING_NAME\";"
   sed -i "s/$IN/$OUT/g" "$MISSION_SQM"
 fi
 
