@@ -25,7 +25,9 @@ if [ "" -ne "$BRIEFING_NAME" ]; then
   echo "Setting briefing name"
   IN='briefingName="[^"]*";'
   OUT="briefingName=\"$BREFING_NAME\";"
-  sed -i "s/$IN/$OUT/g" "$MISSION_SQM"
+  SED=s/$IN/$OUT/g
+  echo "applying sed $SED"
+  sed -i "$SED" "$MISSION_SQM"
 fi
 
 echo "Rapifying mission.sqm"
