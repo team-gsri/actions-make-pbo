@@ -5,10 +5,11 @@ inputs:
   mission:
     description: 'Path to the mission directory containing a mission.sqm'
     required: true
+    deprecationMessage: This action is deprecated and will not receive any update anymore ; please use https://github.com/team-gsri/actions-arma-tools instead.
 
   briefingName:
     description: 'A briefing name to set in the mission sqm'
-    required: false    
+    required: false
 
 runs:
   using: 'docker'
